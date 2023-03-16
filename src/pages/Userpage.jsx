@@ -1,7 +1,8 @@
-    
+    import React from 'react'
 
-export default function Userpage() {
+export const Userpage = () => {
   return (
-    <div>Users</div>
+    <div>Userpage</div>
   )
-}
+   } 
+    

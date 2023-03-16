@@ -1,7 +1,7 @@
 import React from 'react'
-import Slider from '../../Components/Slider';
-export const Homepage = () => {
+import {Slider} from '../../Components/Slider';
+export const Home = () => {
   return (
-    <div><Slider/></div>
+    <div>home</div>
   )
 }

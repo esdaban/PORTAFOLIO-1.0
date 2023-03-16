@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
+import { Link, Outlet } from 'react-router-dom'
 
 function Navbar() {
 
@@ -12,13 +13,13 @@ function Navbar() {
   return (
     <>
       <NavContainer>
-        <h2>Navbar <span>Responsive</span></h2>
+        <h2>ESTEBAN  <span>BARRERA</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="#h">Home</a>
-          <a onClick={handleClick} href="#h">Shop</a>
-          <a onClick={handleClick} href="#h">About</a>
-          <a onClick={handleClick} href="#h">Contact</a>
-          <a onClick={handleClick} href="#h">Blog</a>
+        <Link to={"/"}>Inicio</Link>
+        <Link to={"/about"}>Sobre mi </Link>
+        <Link to={"/projects"}>Proyectos </Link>
+        <Link to={"/contact"}>Contacto </Link>
+
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
